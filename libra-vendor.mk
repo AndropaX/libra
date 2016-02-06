@@ -16,14 +16,13 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
+    com.qualcomm.services.location \
     TimeService \
-    libFlacSwDec \
-    libmdmdetect \
-    libTimeService \
-    com.qualcomm.location \
     qcrilmsgtunnel \
     qcnvitems \
     qcrilhook \
-    libtime_genoff
+    libHevcSwDecoder \
+    libtime_genoff \
+    libmdmdetect
 
 $(call inherit-product, vendor/xiaomi/libra/libra-vendor-blobs.mk)
